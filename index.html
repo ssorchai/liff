@@ -60,7 +60,10 @@
     }
 
     function openWindow() {
-      alert("Test1")
+        liff.openWindow({
+        url: "https://line.me",
+        external: true
+      })
     }
 
     async function getFriendship() {
