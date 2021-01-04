@@ -60,7 +60,7 @@
     }
 
     function openWindow() {
-      alert("Test1")
+      alert("Test2")
     }
 
     async function getFriendship() {
@@ -70,9 +70,8 @@
       if ( liff.getContext().type !== "none"){
         await liff.sendMessages([
             {
-              "type": "sticker",
-              "packageId": "1",
-              "stickerId": "1"
+                "type": "text",
+                "text": "Hello, world"
             }
           ])
         alert("Message Sent")
